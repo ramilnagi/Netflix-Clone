@@ -1,0 +1,18 @@
+1.git init // git reposunu initilation edir , yeni goft fayli yaradir//
+2.git remote add origin "Yeni repo linki" // Github repositorimizin linkini elave etmek ucun yaziriq//
+3. git add . // Butun fayllarimizi yuklemek ucun  gite elave edirik
+4.git commid -m "Mesajimiz"// Yukleme ederken informasiya mesajimizi yazmaq ucun elave edirik .//
+5. git push origin master //Fayllari githuba yuklemeyi basladiriq//
+
+
+
+
+-------elavelr----------
+1. git status // deyisiklik olan faylari ve ya yuklemeye hazir olan fayllarin  statusunu gormek ucun//
+
+
+
+-----configrasiyaar----
+1. git config -l //Konfigrasiya  ayarlarinin listesini gormek ucun 
+2. git config user.email "useremail@gmail.com"  // github user emailini elave etmek ucun//
+3.git config user.name "username"  // github user namesini elave etmek ucun//
