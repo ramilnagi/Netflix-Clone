@@ -1,204 +1,247 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Roboto&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
-*:focus{
-    outline: none;
+*:focus {
+  outline: none;
 }
-.header{
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 50px;
-    z-index: 3;
+.header {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  z-index: 3;
 }
-.logo img{
-    width: 170px;
-    height: 85px;
-    object-fit: cover;
+.logo img {
+  width: 170px;
+  height: 85px;
+  object-fit: cover;
 }
-.right{
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
-select{
-    padding: 10px;
-    border-radius: 2px;
-    background:rgba(0, 0, 0, 0.4);
-    color: #fff;
+select {
+  padding: 10px;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
 }
-option :hover{
-    background-color:red;
+option :hover {
+  background-color: red;
 }
-.btn{
-    color: #fff;
-    padding: 10px;
-    background-color: #e50914;
-    text-decoration: none;
-    border-radius: 5px;
+.btn {
+  color: #fff;
+  padding: 10px;
+  background-color: #e50914;
+  text-decoration: none;
+  border-radius: 5px;
 }
-.container{
-    position: relative;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+.container {
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
-.container img{
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
+.container img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
-.container .img-gradient{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.4);
-    background-image: linear-gradient(0deg,rgba(0, 0, 0, 0.8) 0, transparent 60%, rgba(0, 0, 0, 0.8));
+.container .img-gradient {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8) 0,
+    transparent 60%,
+    rgba(0, 0, 0, 0.8)
+  );
 }
-.container .content{
-    position: absolute;
-    z-index: 3;
-    width: 600px;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
+.container .content {
+  position: absolute;
+  z-index: 3;
+  width: 600px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
 }
-.container h1{
-    font-size: 50px;
-    margin-bottom: 15px;
-    font-weight: 800;
+.container h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+  font-weight: 800;
 }
-.container h3{
-    font-size: 27px;
-    margin-bottom: 20px;
-    font-weight: 400;
+.container h3 {
+  font-size: 27px;
+  margin-bottom: 20px;
+  font-weight: 400;
 }
-.container p{
-    font-size: 19px;
-    margin-bottom: 20px;
+.container p {
+  font-size: 19px;
+  margin-bottom: 20px;
 }
-form{
-    position: relative;
-    left: -100px;
+form {
+  position: relative;
+  left: -100px;
+}
+form input {
+  position: relative;
+  height: 60px;
+  right: -5px;
+  width: 480px;
+  padding: 20px 8px;
+  border: none;
+}
+form button {
+  text-align: center;
+  line-height: 20px;
+  position: absolute;
+  width: 200px;
+  height: 60px;
+  background-color: #e50914;
+  padding: 20px 8px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 23px;
+}
+form button:active {
+  background-color: rgb(172, 14, 14);
+  box-shadow: 0px 0px 0px 2px rgba(209, 46, 46, 1);
+}
+.bb {
+  border-bottom: 8px solid #222;
+}
+.rows {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  padding: 40px 120px;
+  background-color: black;
+  color: #fff;
+}
+.rows h1 {
+  font-size: 3.125rem;
+  margin-bottom: 1rem;
+}
+.rows h3 {
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+.phone {
+  width: 505px;
+}
+.story-card {
+  position: relative;
+  margin: 0 0 0% -15%;
+  width: 100%;
+}
+.story-card-animation {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  left: 50%;
+  margin: 0 auto;
+  transform: translateX(-50%);
 
-}
-form input{
-    position: relative;
-    height: 60px;
-    right: -5px;
-    width: 480px;
-    padding: 20px 8px; 
-    border: none;
-}
-form button{
-    text-align: center;
-    line-height: 20px;
-    position: absolute;
-    width: 200px;
-    height: 60px;
-    background-color: #e50914;
-    padding: 20px 8px; 
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    font-size: 23px;
-}
-form button:active{
-    background-color: rgb(172, 14, 14);
-    box-shadow: 0px 0px 0px 2px rgba(209,46,46,1);
-}
-.bb{
-    border-bottom:  8px solid #222;
-}
-.rows{
-    display: grid;
-    grid-template-columns: auto auto;
-    align-items: center;
-    padding: 40px 120px ;
-    background-color: black;
-    color: #fff;
-}
-.rows  h1{
-    font-size: 3.125rem;
-    margin-bottom: 1rem;
-}
-.rows h3{
-    font-size: 1.625rem;
-    font-weight: 400;
+  bottom: 30px;
+  background-color: black;
 
+  border: 2px solid #a1a1a1;
+  border-radius: 10px;
+  padding: 0.5em 0.75em;
 }
-.phone{
-    width: 505px;
+.story-card-animation img {
+  width: 51px;
 }
-.story-card{
-    position: relative;
-    margin: 0  0 0% -15%;
-    width: 100%;
+.card-animation-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
 }
-.story-card-animation{
-    display:inline-flex;
-    align-items: center;
-    gap: 20px;
-    position: absolute;
-    left: 50%;
-    margin: 0 auto;
-    transform: translateX(-50%);
- 
-    bottom: 30px;
-    background-color: black;
-    
-    border: 2px solid #a1a1a1;
-    border-radius: 10px;
-    padding: 0.5em 0.75em;
+.card-animation-content div {
+  width: 130px;
 }
-.story-card-animation img{
-    width: 51px;
+.kidspile img {
+  width: 600px;
+  height: 400px;
 }
-.card-animation-content{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 100px;
+.questionBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  padding: 200px;
+  color: white;
 }
-.card-animation-content div{
-    width: 130px;
+.questionBox h2 {
+  text-align: center;
+  font-size: 3.125rem;
+  margin-bottom: 30px;
 }
-.kidspile img{
-width: 600px;
-height: 400px;
+.question {
+  width: 800px;
+  height: 80px;
+  background-color: #222;
+  margin-top: 10px;
+  padding: 30px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.questionBox{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-   padding: 200px;
-   color: white;
-
+.form {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.questionBox h2{
-    text-align: center;
-    font-size: 3.125rem;
-    margin-bottom: 30px;
+.form p {
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 60px;
+  font-size: 17px;
 }
-.question{
-    width: 800px;
-    height: 80px;
-    background-color: #222;
-    margin-top: 10px;
-    padding: 30px;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+footer {
+  background-color: black;
+  padding-left: 250px;
+  padding-top: 40px;
+}
+footer div {
+  display: flex;
+  gap: 70px;
+}
+footer li {
+  padding-top: 30px;
+}
+footer a {
+  color: rgb(172, 172, 172);
+  text-decoration: none;
+  font-weight: 0.1;
+  font-size: 13px;
+}
+footer select {
+  padding: 15px;
+  margin-top: 30px;
+  width: 130px;
+  font-size: 18px;
+  font-weight: 1;
+}
+footer p {
+  color: rgb(172, 172, 172);
+  margin-top: 20px;
+  padding-bottom: 20px;
 }
